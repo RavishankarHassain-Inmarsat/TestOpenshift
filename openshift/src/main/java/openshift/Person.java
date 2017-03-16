@@ -9,11 +9,11 @@ public class Person implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Name")
+  
    private java.lang.String name;
    @org.kie.api.definition.type.Label(value = "Age")
    private java.lang.Integer age;
-   @org.kie.api.definition.type.Label(value = "Salary")
+  
    private java.lang.Integer salary;
 
    public Person()
