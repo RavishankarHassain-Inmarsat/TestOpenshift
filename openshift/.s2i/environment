@@ -1,2 +1,1 @@
-KIE_CONTAINER_DEPLOYMENT=testOpenshift=openshift:openshift:1.0
 KIE_CONTAINER_DEPLOYMENT_OVERRIDE=testOpenshift=openshift:openshift:1.0.1
