@@ -1,0 +1,32 @@
+package openshift.openshift;
+import openshift.Person;
+import org.jbpm.workflow.instance.WorkflowProcessInstance;
+
+rule "Get Service order1"
+ ruleflow-group "demo"
+    no-loop
+    when
+       //  $processInstance: WorkflowProcessInstance()
+       
+    then
+   
+      System.out.println("Executed Rule");
+        
+end
+
+
+rule "Determine Profit center - DP iD - 3033"
+
+ ruleflow-group "demo"
+    no-loop
+    when
+        s : Person(salary>1000)
+        process: WorkflowProcessInstance()
+       
+    then
+        
+        s.setName("Hari");
+        process.setVariable("person",s);
+        retract(process);
+         System.out.println("Executed111 :" +process.getVariable("person"));
+end
