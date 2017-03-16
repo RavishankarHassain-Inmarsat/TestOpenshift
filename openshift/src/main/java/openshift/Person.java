@@ -11,7 +11,7 @@ public class Person implements java.io.Serializable
 
   
    private java.lang.String name;
-   @org.kie.api.definition.type.Label(value = "Age")
+
    private java.lang.Integer age;
   
    private java.lang.Integer salary;
